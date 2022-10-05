@@ -3,10 +3,11 @@ autoload -Uz vcs_info
 precmd() {
     vcs_info
 
+    # to show only the current file use %1d instead of %~
     if [[ -z ${vcs_info_msg_0_} ]]; then
-        PROMPT='🤓 %F{147}%n 📁 %F{85}%1d 🌴 %F{200}empty %f▶ '
+        PROMPT='🤓 %F{147}%n 📁 %F{85}%~ 🌴 %F{200}empty %f▶ '
     else
-        PROMPT="🤓 %F{147}%n 📁 %F{85}%1d 🌴 %F{202}${vcs_info_msg_0_} %f▶ "
+        PROMPT="🤓 %F{147}%n 📁 %F{85}%~ 🌴 %F{202}${vcs_info_msg_0_} %f▶ "
     fi
 }
 
