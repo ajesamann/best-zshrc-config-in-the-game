@@ -30,5 +30,3 @@ zstyle ':vcs_info:git:*' formats '%b'
 # Commands
 alias zshrc="code ~/.zshrc"
 alias reload='echo -e "\033[1m<── TERMINAL RELOADED @ $(date +%d.%m.%y-%H:%M:%S) ──>\033[0m"; exec zsh -l'
-alias work="cd /; cd Users/<username>/Desktop/<work folder>; ls"
-alias home="cd /; cd Users/<username>"
