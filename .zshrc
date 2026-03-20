@@ -1,6 +1,4 @@
 # Generic
-alias zshrc='cursor ~/.zshrc'
-
 reload() {
   echo -e "\n\033[1;36m✦✦✦ TERMINAL RELOADED ✦✦✦\033[0m"
   echo -e "\033[1;33m$(date "+%A, %b %d %Y %H:%M:%S")\033[0m\n"
